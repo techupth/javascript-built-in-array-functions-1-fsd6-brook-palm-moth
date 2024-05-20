@@ -1,4 +1,4 @@
-const students = [
+const students1 = [
   { name: "John", score: 80 },
   { name: "Jane", score: 90 },
   { name: "Jim", score: 85 },
@@ -6,7 +6,8 @@ const students = [
 ];
 
 function getAverageStudentScore(students) {
-  // Start coding here
+  return students.reduce((accum,current) => accum + current.score/students.length,0);
 }
 
-getAverageStudentScore(students); // Output: 87.5
+let result = getAverageStudentScore(students1); // Output: 87.5
+console.log(result);

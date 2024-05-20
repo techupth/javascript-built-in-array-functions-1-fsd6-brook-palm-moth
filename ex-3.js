@@ -1,4 +1,4 @@
-const todos = [
+const todos1 = [
   { topic: "Doing pre-work", completed: true },
   { topic: "Workout", completed: false },
   { topic: "Playing computer games", completed: true },
@@ -6,11 +6,14 @@ const todos = [
   { topic: "Clean the room", completed: true },
 ];
 
+
 function getTodoTopics(todos) {
-  // Start coding here
+	return todos.map((check) => check.topic);
+  
 }
 
-getTodoTopics(todos);
+let result = getTodoTopics(todos1);
+console.log(result);
 
 /* 
 	Output:
