@@ -1,4 +1,4 @@
-const todos = [
+const todos1 = [
   { topic: "Doing pre-work", completed: true },
   { topic: "Workout", completed: false },
   { topic: "Playing computer games", completed: true },
@@ -7,10 +7,11 @@ const todos = [
 ];
 
 function getCompletedTodo(todos) {
-  // Start coding here
+  return todos.filter((check) => check.completed);
 }
 
-getCompletedTodo(todos);
+let result = getCompletedTodo(todos1);
+console.log(result);
 
 /* 
 	Output:
